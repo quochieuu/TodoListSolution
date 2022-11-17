@@ -1,10 +1,12 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 using TodoListSolution.Models;
 using TodoListSolution.Repository;
 
 namespace TodoListSolution.Controllers
 {
+    [Authorize]
     public class HomeController : Controller
     {
         private readonly ITaskRepository _taskRepository;
