@@ -1,0 +1,29 @@
+﻿@{
+    ViewData["Title"] = "Login";
+    Layout = "/Areas/Admin/Views/Shared/_AuthLayout.cshtml";
+}
+
+<div class="signup slide-up">
+    <h2 class="form-title" id="signup"><span></span>Admin Login</h2>
+    @*<form asp-action="Register" method="post">
+        <div class="form-holder">
+            <input type="text" name="FirstName" class="input" placeholder="First Name">
+            <input type="text" name="LastName" class="input" placeholder="Last Name">
+            <input type="email" name="Email" class="input" placeholder="Email">
+            <input type="password" name="Password" class="input" placeholder="Password">
+        </div>
+        <button type="submit" class="submit-btn">Sign up</button>
+    </form>*@
+</div>
+<div class="login">
+    <div class="center">
+        <h2 class="form-title" id="login"><span>or</span>Log in</h2>
+        <form asp-action="Login" method="post">
+            <div class="form-holder">
+                <input type="email" name="Email" class="input" placeholder="Email">
+                <input type="password" name="Password" class="input" placeholder="Password">
+            </div>
+            <button type="submit" class="submit-btn">Log in</button>
+        </form>
+    </div>
+</div>
